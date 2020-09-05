@@ -1,0 +1,54 @@
+<html>
+<head>
+	<style>
+		.main{
+			height:320px;
+			width:250px;
+			position:relative;
+		}
+		.card{
+			cursor:pointer;
+			width:100%;
+			height:100%;
+			transform-style: preserve-3d;
+			transition: all 0.5s ease;
+		}
+		.card:hover{
+			transform: rotateY(180deg);
+		}
+		.front{
+			position: absolute;
+			width:100%;
+			height:100%;
+			background: green;
+			backface-visibility: hidden;
+		}
+		.back{
+			position: absolute;
+			width:100%;
+			height:100%;
+			background: red;
+			backface-visibility: hidden;
+			transform: rotateY(180deg);
+		}
+		.back{
+			height: 550px;
+			width: 700px;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+	<div class="card">
+		<div class="front">
+			<img src="oreo_bite.jpg">
+		</div>
+		<div class="back">
+			<div class="back-content">
+				<img src="oreo_full.jpg">
+			</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
